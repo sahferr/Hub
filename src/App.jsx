@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import proxImage from "../assets/prox.jpg";
-import tabbyLogo from "../assets/tabby_logo.png";
-import teamHubImage from "../assets/team_hub.png";
+import proxImage from "./img/prox.jpg";
+import tabbyLogo from "./img/tabby_logo.png";
+import teamHubImage from "./img/team_hub.png";
 
 const products = [
   {
