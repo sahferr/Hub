@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import proxImage from "../assets/prox.jpg";
+import tabbyLogo from "../assets/tabby_logo.png";
+import teamHubImage from "../assets/team_hub.png";
 
 const products = [
   {
     name: "Tabby",
-    image: "/assets/tabby_logo.png",
+    image: tabbyLogo,
     alt: "Identidade visual do produto Tabby",
     description:
       "O Tabby é uma plataforma SaaS focada na modernização de operações digitais. Seu objetivo é simplificar processos, conectar informações e melhorar a experiência entre empresas e seus clientes por meio de uma solução tecnológica integrada.",
@@ -11,7 +14,7 @@ const products = [
   },
   {
     name: "Team Hub",
-    image: "/assets/team_hub.png",
+    image: teamHubImage,
     alt: "Previa visual do produto Team Hub",
     description:
       "Centralize a comunicação do time, organize informações importantes e mantenha o desenvolvimento do produto conectado em um único ambiente.",
@@ -393,7 +396,7 @@ function Future() {
       <Reveal className="relative overflow-hidden rounded-xl border border-white/10 bg-surface after:absolute after:inset-0 after:border-t-2 after:border-accent after:opacity-45">
         <img
           className="block min-h-60 w-full object-cover md:min-h-[360px]"
-          src="/assets/prox.jpg"
+          src={proxImage}
           alt="Interface digital de produto em desenvolvimento"
         />
       </Reveal>
