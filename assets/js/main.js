@@ -7,6 +7,11 @@ const revealSelectors = [
 ];
 
 const sections = document.querySelectorAll("section:not(.hero)");
+const disabledProductButtons = document.querySelectorAll(
+  "[data-disabled-product]",
+);
+const toast = document.querySelector("[data-toast]");
+let toastTimeout;
 
 const animateSectionContent = (section) => {
   const elements = section.querySelectorAll(revealSelectors.join(","));
@@ -31,3 +36,25 @@ const revealObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => revealObserver.observe(section));
+
+const showToast = (message) => {
+  if (!toast) {
+    return;
+  }
+
+  window.clearTimeout(toastTimeout);
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+
+  toastTimeout = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 3200);
+};
+
+disabledProductButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    showToast(
+      "Os links dos produtos estão temporariamente desabilitados durante o lançamento.",
+    );
+  });
+});
