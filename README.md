@@ -1,17 +1,13 @@
-# Sara — Site Pessoal
-
-Site pessoal e de negócios, pronto para deploy no Fly.io e GitHub Pages.
-
----
+# Sara — Profile
 
 ## 📁 Estrutura
 
 ```
 sara-site/
-├── index.html       ← site completo (edite aqui)
-├── Dockerfile       ← para deploy no Fly.io
-├── nginx.conf       ← config do servidor
-├── fly.toml         ← config do Fly.io
+├── index.html       
+├── Dockerfile       
+├── nginx.conf       
+├── fly.toml         
 └── README.md
 ```
 
