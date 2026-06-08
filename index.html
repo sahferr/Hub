@@ -146,8 +146,8 @@
           construindo.
         </h2>
         <p class="products__intro">
-          Produtos em fase de lançamento, validação e evolução contínua.
-          Os links de acesso estão temporariamente desabilitados.
+          Produtos em fase de lançamento, validação e evolução contínua. Os
+          links de acesso estão temporariamente desabilitados.
         </p>
 
         <div class="products__grid">
@@ -166,7 +166,11 @@
             </p>
             <div class="product-card__footer">
               <p class="product-card__status">Em lançamento</p>
-              <button class="product-card__action" type="button" data-disabled-product>
+              <button
+                class="product-card__action"
+                type="button"
+                data-disabled-product
+              >
                 Acessar produto
               </button>
             </div>
@@ -188,32 +192,52 @@
               <p class="product-card__status product-card__status--warning">
                 Revisão para lançamento
               </p>
-              <button class="product-card__action" type="button" data-disabled-product>
+              <button
+                class="product-card__action"
+                type="button"
+                data-disabled-product
+              >
                 Acessar produto
               </button>
             </div>
           </article>
+        </div>
+      </section>
 
-          <article class="product-card">
-            <img
-              class="product-card__image"
-              src="./assets/prox.jpg"
-              alt="Interface digital de produto em desenvolvimento"
-            />
-            <h3 class="product-card__title">Projeto Futuro</h3>
-            <p class="product-card__description">
-              Próximo lançamento. O que vem por aí? Fique de olho para novidades
-              emocionantes!
-            </p>
-            <div class="product-card__footer">
-              <p class="product-card__status product-card__status--muted">
-                Pré-lançamento
-              </p>
-              <button class="product-card__action" type="button" data-disabled-product>
-                Acessar produto
-              </button>
-            </div>
-          </article>
+      <section
+        class="section future"
+        id="futuro"
+        aria-labelledby="future-title"
+      >
+        <div class="future__media">
+          <img
+            class="future__image"
+            src="./assets/prox.jpg"
+            alt="Interface digital de produto em desenvolvimento"
+          />
+        </div>
+
+        <div class="future__content">
+          <p class="section__label">Projeto futuro</p>
+          <p
+            class="future__status product-card__status product-card__status--muted"
+          >
+            Pré-lançamento
+          </p>
+          <h2 class="section__title" id="future-title">
+            O próximo passo<br />
+            já está em estudo.
+          </h2>
+          <p class="future__description">
+            Nosso foco está no lançamento atual, mas a inovação não para. Novas
+            ideias, funcionalidades e produtos já estão sendo explorados nos
+            bastidores.
+          </p>
+          <p class="future__description">
+            Este é o início de uma transformação maior construída passo a passo,
+            lançamento após lançamento. Vamos construir o futuro juntos? Fique
+            ligado para as próximas novidades.
+          </p>
         </div>
       </section>
 

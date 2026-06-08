@@ -3,6 +3,8 @@ const revealSelectors = [
   ".section__title",
   ".about__grid",
   ".products__grid",
+  ".future__media",
+  ".future__content",
   ".contact__content",
 ];
 
