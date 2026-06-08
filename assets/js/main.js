@@ -2,6 +2,7 @@ const revealSelectors = [
   ".section__label",
   ".section__title",
   ".about__grid",
+  ".team__grid",
   ".products__grid",
   ".future__media",
   ".future__content",

@@ -167,6 +167,7 @@ main {
 .section__label,
 .stats__label,
 .product-card__status,
+.team-card__link,
 .site-footer {
   font-family: var(--font-mono);
 }
@@ -400,6 +401,94 @@ main {
 
 .code-string {
   color: #a78bfa;
+}
+
+.team {
+  border-top: 1px solid var(--color-border);
+}
+
+.team__intro {
+  max-width: 560px;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  padding: 1.5rem;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.team-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  opacity: 0;
+  background: linear-gradient(
+    90deg,
+    var(--color-accent),
+    var(--color-accent-alt)
+  );
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover {
+  border-color: rgba(0, 229, 160, 0.25);
+  background: var(--color-surface-strong);
+  transform: translateY(-4px);
+}
+
+.team-card:hover::before {
+  opacity: 1;
+}
+
+.team-card__initials {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(0, 229, 160, 0.24);
+  border-radius: var(--radius-md);
+  background: rgba(0, 229, 160, 0.08);
+  color: var(--color-accent);
+  font-weight: 800;
+}
+
+.team-card__name {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.team-card__link {
+  display: inline-flex;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.team-card__link:hover {
+  color: var(--color-accent);
 }
 
 .products__grid {
