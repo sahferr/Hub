@@ -1,17 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import proxImage from "./img/prox.jpg";
-import tabbyLogo from "./img/tabby_logo.png";
 import teamHubImage from "./img/team_hub.png";
 
 const products = [
-  {
-    name: "Tabby",
-    image: tabbyLogo,
-    alt: "Identidade visual do produto Tabby",
-    description:
-      "O Tabby é uma plataforma SaaS focada na modernização de operações digitais. Seu objetivo é simplificar processos, conectar informações e melhorar a experiência entre empresas e seus clientes por meio de uma solução tecnológica integrada.",
-    status: "Em lançamento",
-  },
   {
     name: "Team Hub",
     image: teamHubImage,
